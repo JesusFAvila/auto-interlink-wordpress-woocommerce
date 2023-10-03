@@ -16,3 +16,5 @@ Evita Sobreescribir Enlaces e Imágenes: Se ha implementado lógica para no reem
 Reemplazo Limitado: Aunque una palabra clave aparezca varias veces en el contenido, la función reemplaza solo la primera aparición. Esto evita una saturación de enlaces y mantiene una lectura fluida.
 
 Integración con WordPress: Está diseñada para trabajar en armonía con WordPress. Se aplica como un filtro al contenido (the_content), por lo que se ejecuta automáticamente cada vez que WordPress muestra el contenido de una publicación o página.
+
+Actualización: Compatibilidad con Woocommerce para aplicar los enlaces a las descripciones cortas de productos y categorías
