@@ -35,4 +35,10 @@ function automate_internal_links($content) {
     return $content;
 }
 
+// Aplica la función al contenido de las entradas y páginas de WordPress.
 add_filter('the_content', 'automate_internal_links');
+
+// Si WooCommerce está activo, aplica la función a las descripciones cortas de los productos.
+if (in_array('woocommerce/woocommerce.php', apply_filters('active_plugins', get_option('active_plugins')))) {
+    add_filter('woocommerce_short_description', 'automate_internal_links');
+}
